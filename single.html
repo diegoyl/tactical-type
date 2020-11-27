@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>4.053</title>
+  <meta name="description" content="a typeface designed for 4.053">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/8a31913980.js" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/script.js"></script>
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+</head>
+
+
+<body onload="init()">
+    <div id="single-container" style="margin-top:15px;">
+        <div class="single-vid-stack">
+            <video class="single-vids single-cam-only">
+                <source src="img/cam-only.mp4" type="video/mp4">
+            </video>
+            <video id="switch-vid" class="single-vids single-letter-vids">
+              <source src="img/anims/A.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div style="display:block;margin:auto; margin-top:15px">
+            <i id="btn-big" onclick="vidButton2()" class="fas fa-play fa-big"></i> 
+        </div>
+
+    </div>
+    <div id="back">
+        <a href="index.html">back</a>
+    </div>
+
+</body>
+
+
+</html>
