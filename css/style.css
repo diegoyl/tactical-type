@@ -1,0 +1,240 @@
+:root {
+    --main-color: rgb(252, 101, 113);
+}
+
+
+body,p,h1,h2,h3,h4,h5,h6 {font-family: 'Work Sans', sans-serif;} /* change to sans-serif when readt */
+
+#left-wrapper {
+    /* background-color: rgb(215, 242, 255); */
+    width: 33%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-emphasis: center;
+    z-index: 1; /* Stay on top */
+    /* overflow: hidden; Disable horizontal scroll */
+}
+#right-wrapper {
+    width: 66%;
+    margin-left: 32.7%;
+    margin-top: -5px;
+    text-align: center;
+    /* background-color: rgb(255, 174, 208); */
+}
+#slider-box {
+    position: fixed;
+    /* background-color: rgba(255, 0, 0, 0.281); */
+    /* margin: auto; */
+    width: 1%;
+    top: 2%;
+    left: 32.7%;
+    height: 96%;
+
+}
+#letter-container {
+    /* border: red 2px solid; */
+    margin: auto;
+    width: 98%;
+    margin-left: 2.5%;
+
+}
+
+.vids {z-index: 1;}
+
+
+.vid-stack {
+    /* border: rgb(218, 218, 218) 1px solid; */
+    position: relative;
+    width: 180px;
+    height: 81.81px;
+    margin: 0px -1px;
+    display: inline-block;
+}
+.letter-vids, .cam-only {
+    min-width: 100%;
+    max-width: 100%;
+}
+.letter-vids {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    mix-blend-mode: darken;
+    opacity: 1;
+    transition: all .2s ease;
+}
+.cam-only {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlayTop {
+    background-color: rgb(255, 255, 255);
+    border: white 1.2px solid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .2s ease;
+    opacity: 1;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+/* .vid-stack:hover .overlayTop{
+    opacity: 0;
+    border: white 0px solid;
+}
+.vid-stack:hover .letter-vids{
+    opacity: .7;
+} */
+
+
+#camVid {
+    width: 95%;
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 70px;
+    line-height: .9em;
+}
+
+
+#btn {
+    height: 1px;
+    width: 32px;
+    background-color: rgb(0, 0, 0);
+    font-size: 18px;
+    /* padding: 20px 20px; */
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+#slider {
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+    height: 5px;
+    padding: 0;
+    margin-left: 22px;
+    vertical-align: top;
+    margin-top: 16.6px;
+    /* margin: auto; */
+    -webkit-appearance: none;
+    /* appearance: none; */
+    outline: none;
+    border-radius: 2px;
+    color: tomato;
+    background-color: #000000;
+    z-index: 5;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 3px solid #000000;
+    height: 16px;
+    width: 16px;
+    border-radius: 6px;
+    background: #ffffff;
+    cursor: pointer;
+    margin-top: -1px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    /* box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; */
+}
+
+/* input[type=range][orient=vertical]
+{
+    -webkit-appearance: none;
+    writing-mode: bt-lr;
+    -webkit-appearance: slider-vertical; 
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    outline: none;
+    border-radius: 4px;
+    background-color: #ff8cd9;
+} */
+
+#type {
+    width: 100%;
+    min-height: 100px;
+}
+
+.fa-play, .fa-pause {
+    padding-top: 9px;
+    padding-bottom: 25px;
+    padding-left: 3px;
+}
+.fa-pause {
+    padding-left: 0px;
+}
+.fa-big {
+    padding-top: 11px;
+}
+#btn-big {
+    height: 3px;
+    width: 40px;
+    background-color: rgb(0, 0, 0);
+    font-size: 18px;
+    /* padding: 20px 20px; */
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.vids {z-index: 1;}
+
+
+.single-vid-stack {
+    /* border: rgb(218, 218, 218) 1px solid; */
+    position: relative;
+    margin: auto;
+    width: 1100px;
+    height: 500px;
+    display: block;
+}
+.single-letter-vids {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    mix-blend-mode: darken;
+    opacity: .8;
+}
+.single-cam-only {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#back {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+a {
+    text-decoration: underline;
+    color: gray;
+}
+a:hover {
+    text-decoration: underline;
+    color: black;
+
+}
