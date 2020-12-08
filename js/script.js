@@ -213,12 +213,25 @@ $(window).scroll(function() {
 
 
 const gap = 1200;
+var reset = 0;
 function autoswitch() {
 	console.log("FORWARDS");
-
 	var i = 0
 	var intervalID = window.setInterval(myCallback, gap);
 	function myCallback() {
+		reset += 1;
 		switchRight();
+		if(reset > 25) {
+			reset = 0;
+			
+			$("#switch-vid").get(0).pause(); 
+			$("#bg-vid").get(0).pause(); 
+			 
+			$("#switch-vid").get(0).currentTime = 0; 
+			$("#bg-vid").get(0).currentTime = 0; 
+
+			$("#switch-vid").get(0).play(); 
+			$("#bg-vid").get(0).play(); 
+		}
 	}
 }
