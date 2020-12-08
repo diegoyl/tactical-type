@@ -233,7 +233,7 @@ function autoswitch() {
 			$("#bg-vid").get(0).pause(); 
 			 
 			$("#switch-vid").get(0).currentTime = 0; 
-			$("#bg-vid").get(0).currentTime = 0; 
+			$("#bg-vid").get(0).currentTime = 0.05; 
 
 			$("#switch-vid").get(0).play(); 
 			$("#bg-vid").get(0).play(); 
