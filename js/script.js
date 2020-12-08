@@ -217,7 +217,7 @@ $(window).scroll(function() {
 });
 
 
-const gap = 750;
+const gap = 1000;
 var reset = 0;
 function autoswitch() {
 	console.log("FORWARDS");
@@ -226,7 +226,7 @@ function autoswitch() {
 	function myCallback() {
 		reset += 1;
 		switchRight();
-		if(reset > 25) {
+		if(reset > 21) {
 			reset = 0;
 			
 			$("#switch-vid").get(0).pause(); 
