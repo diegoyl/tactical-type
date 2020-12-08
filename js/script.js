@@ -217,7 +217,7 @@ $(window).scroll(function() {
 });
 
 
-const gap = 900;
+const gap = 800;
 var reset = 0;
 function autoswitch() {
 	console.log("FORWARDS");
