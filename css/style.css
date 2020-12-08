@@ -16,25 +16,25 @@ body, html {
 
 @font-face {
     font-family: "TT03";
-    src: url(/fonts/tt03.ttf);
+    src: url(fonts/tt03.ttf);
     font-style: normal;
     font-weight: 100;     
 }
 @font-face {
     font-family: "TT07";
-    src: url(/fonts/tt07.ttf);
+    src: url(fonts/tt07.ttf);
     font-style: normal;
     font-weight: 100;     
 }
 @font-face {
     font-family: "TT12";
-    src: url(/fonts/tt12.ttf);
+    src: url(fonts/tt12.ttf);
     font-style: normal;
     font-weight: 100;     
 }
 @font-face {
     font-family: "TT19";
-    src: url(/fonts/tt19.ttf);
+    src: url(fonts/tt19.ttf);
     font-style: normal;
     font-weight: 100;     
 }
