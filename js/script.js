@@ -144,7 +144,7 @@ var W = 'img/anims/W.mp4';
 var X = 'img/anims/X.mp4';
 var Y = 'img/anims/Y.mp4';
 var Z = 'img/anims/Z.mp4';
-var lettes = [A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z];
+var letters = [A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z];
 var letter_index = 0;
 function switchLeft() {
 	letter_index += -1;
