@@ -216,7 +216,7 @@ h1 {
 }
 #try-bg {
     width: 100%;
-    background-image: url(img/field-bg.png);
+    background-image: url(img/field-bg.PNG);
     background-size:     cover;                      
     background-repeat:   no-repeat;
     background-position: center center;
