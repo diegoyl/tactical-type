@@ -61,6 +61,9 @@ function init() {
 	}, true);
 
 
+	autoswitch();
+
+
 }
 
 function timeButton() {
@@ -181,10 +184,10 @@ function switchTry(form) {
 	for (i = 0; i < 4; i++) {
 		if (i == form) {
 			// $("#try"+i).css("background-color", "var(--green-color)"); 
-			$("#try"+i).css("color", "black");
+			$("#try"+i).css("opacity", "1");
 		} else {
 			// $("#try"+i).css("background-color", "white"); 
-			$("#try"+i).css("color", "var(--gray-color)"); 
+			$("#try"+i).css("opacity", ".6"); 
 		}	  
 	}
 }
@@ -208,3 +211,14 @@ $(window).scroll(function() {
 	}
 });
 
+
+const gap = 1200;
+function autoswitch() {
+	console.log("FORWARDS");
+
+	var i = 0
+	var intervalID = window.setInterval(myCallback, gap);
+	function myCallback() {
+		switchRight();
+	}
+}

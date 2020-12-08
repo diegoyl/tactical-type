@@ -214,13 +214,21 @@ h1 {
 #download:active {
     transform: translateY(10px);
 }
+#try-bg {
+    width: 100%;
+    background-image: url(img/field-bg.png);
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
 #tryitout {
     outline: none;
     border: none;
-    color: black;
+    color: white;
+    font-weight: bold;
     width: 85%;
-    
     margin: 0;
+    background: none;
 }
 .try-options {
     display: inline-block;
@@ -234,11 +242,12 @@ h1 {
     padding-top: 18px;
     padding-left: 20px;
     padding-right: 20px;
-    color: var(--gray-color);
+    color: white;
+    opacity: .6;
 }
 .tryActive{
     /* background-color: var(--green-color); */
-    color: black;
+    opacity: 1;
 }
 #fix-div {
     width: 100%;
