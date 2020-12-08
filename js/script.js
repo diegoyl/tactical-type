@@ -61,11 +61,11 @@ function init() {
 	}, true);
 
 
-	$("#switch-vid").get(0).currentTime = 0; 
-	$("#bg-vid").get(0).currentTime = 0; 
+	// $("#switch-vid").get(0).currentTime = 0; 
+	// $("#bg-vid").get(0).currentTime = 0; 
 
-	$("#switch-vid").get(0).play(); 
-	$("#bg-vid").get(0).play(); 
+	// $("#switch-vid").get(0).play(); 
+	// $("#bg-vid").get(0).play(); 
 	autoswitch();
 
 
@@ -217,7 +217,7 @@ $(window).scroll(function() {
 });
 
 
-const gap = 1200;
+const gap = 900;
 var reset = 0;
 function autoswitch() {
 	console.log("FORWARDS");
