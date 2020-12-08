@@ -1,9 +1,69 @@
 :root {
     --main-color: rgb(252, 101, 113);
+    --green-color: rgb(214, 214, 214);
+    --gray-color: rgb(194, 194, 194);
+
 }
 
 
-body,p,h1,h2,h3,h4,h5,h6 {font-family: 'Work Sans', sans-serif;} /* change to sans-serif when readt */
+body,p,h1,h2,h3,h4,h5,h6 {font-family: monospace, sans-serif;} /* change to sans-serif when readt */
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+
+@font-face {
+    font-family: "TT03";
+    src: url(/fonts/tt03.ttf);
+    font-style: normal;
+    font-weight: 100;     
+}
+@font-face {
+    font-family: "TT07";
+    src: url(/fonts/tt07.ttf);
+    font-style: normal;
+    font-weight: 100;     
+}
+@font-face {
+    font-family: "TT12";
+    src: url(/fonts/tt12.ttf);
+    font-style: normal;
+    font-weight: 100;     
+}
+@font-face {
+    font-family: "TT19";
+    src: url(/fonts/tt19.ttf);
+    font-style: normal;
+    font-weight: 100;     
+}
+
+.tt03 {
+    font-family: "TT03", monospace;
+    font-weight:100;
+    font-style:normal;
+    font-size: 50px;
+}
+.tt07 {
+    font-family: "TT07", monospace;
+    font-weight:100;
+    font-style:normal;
+    font-size: 50px;
+}
+.tt12 {
+    font-family: "TT12", monospace;
+    font-weight:100;
+    font-style:normal;
+    font-size: 50px;
+}
+.tt19 {
+    font-family: "TT19", monospace;
+    font-weight:100;
+    font-style:normal;
+    font-size: 50px;
+}
+
 
 #left-wrapper {
     /* background-color: rgb(215, 242, 255); */
@@ -35,11 +95,11 @@ body,p,h1,h2,h3,h4,h5,h6 {font-family: 'Work Sans', sans-serif;} /* change to sa
 }
 #letter-container {
     /* border: red 2px solid; */
-    margin: auto;
-    width: 98%;
-    margin-left: 2.5%;
+    margin: 0;
+    width: 100%;
 
 }
+
 
 .vids {z-index: 1;}
 
@@ -47,7 +107,7 @@ body,p,h1,h2,h3,h4,h5,h6 {font-family: 'Work Sans', sans-serif;} /* change to sa
 .vid-stack {
     /* border: rgb(218, 218, 218) 1px solid; */
     position: relative;
-    width: 180px;
+    width: 200px;
     height: 81.81px;
     margin: 0px -1px;
     display: inline-block;
@@ -91,7 +151,14 @@ body,p,h1,h2,h3,h4,h5,h6 {font-family: 'Work Sans', sans-serif;} /* change to sa
     opacity: .7;
 } */
 
-
+.main-vid {
+    max-width: 100%;
+    width: 1000px;
+    /* min-width: 60%; */
+    display: block;
+    padding: 0;
+    margin: auto;
+}
 #camVid {
     width: 95%;
     display: block;
@@ -99,13 +166,136 @@ body,p,h1,h2,h3,h4,h5,h6 {font-family: 'Work Sans', sans-serif;} /* change to sa
 }
 
 h1 {
+    margin-top: 20px;
+    font-family: "TT07";
     display: block;
-    font-weight: bold;
+    font-weight: normal;
     text-align: center;
-    margin-top: 30px;
-    font-size: 60px;
+    margin-top: 0px;
+    font-size: 100px;
+    cursor: default;
+    margin-bottom: 5px;
 }
 
+/* h1:hover {
+    font-family: "TT03";
+    cursor: default;
+} */
+
+.formations {
+    font-family: monospace;
+    display: block;
+    font-weight: normal;
+    font-size: 70px;
+    height: 120px;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    color: var(--gray-color);
+}
+
+#download {
+    height: 120px;
+    padding-top: 10px;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: grey;
+    color: white;
+    font-size:45px;
+    font-family: monospace;
+    display: inline-block;
+}
+#download:hover {
+    cursor: pointer;
+    background-color: rgb(27, 27, 27);
+    font-family: "TT07";
+}
+#download:active {
+    transform: translateY(10px);
+}
+#tryitout {
+    outline: none;
+    border: none;
+    color: black;
+    width: 85%;
+    
+    margin: 0;
+}
+.try-options {
+    display: inline-block;
+    height: 45px;
+    font-size: 28px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: none;
+    margin-top: -6px;
+    margin-bottom: 0px;
+    padding-top: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: var(--gray-color);
+}
+.tryActive{
+    /* background-color: var(--green-color); */
+    color: black;
+}
+#fix-div {
+    width: 100%;
+    height: 370px;
+    vertical-align: middle;
+    position: relative;
+    text-align: left;
+
+}
+
+.fix {
+    margin-left: 20%;
+    font-size: 100px;
+    display: inline-block;
+    font-family: "TT03";
+    transition: .7s;
+    text-align: left;
+    margin-top: 34px;
+    z-index: 5;
+}
+.manager {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#manager-box {
+    position: absolute;
+    top:108px;
+    right: 5%;
+}
+#manager-div {
+    display: inline-block;
+    height: 200px;
+    width: 260px;
+    position: relative;
+}
+#m-happy {
+    opacity: 0;
+    transition: .25s;
+}
+/* 
+.fix:hover ~ #m-happy {
+    opacity: 1;
+}
+.fix:hover {
+    font-size: 105px;
+    font-family: "TT07";
+    margin-top: 28px;
+} */
+
+.try-options:hover {cursor: pointer; font-weight: bold;}
+#f1:hover {font-family: "TT03"; color: black;}
+#f2:hover {font-family: "TT07"; color: black;}
+#f3:hover {font-family: "TT12"; color: black;}
+#f4:hover {font-family: "TT19"; color: black;}
 
 #btn {
     height: 1px;
@@ -185,26 +375,28 @@ input[type=range]::-webkit-slider-thumb {
     width: 40px;
     background-color: rgb(0, 0, 0);
     font-size: 18px;
+
     /* padding: 20px 20px; */
     border: none;
     cursor: pointer;
     border-radius: 20px;
     color: white;
     text-align: center;
-    display: block;
+    display: inline-block;
     margin: auto;
 }
 
 .vids {z-index: 1;}
 
 
-.single-vid-stack {
-    /* border: rgb(218, 218, 218) 1px solid; */
-    position: relative;
-    margin: auto;
-    width: 1100px;
-    height: 500px;
+.single-vid-stack {   
+    
+    width: 1000px;
+    height: 405.5px;
     display: block;
+    padding: 0;
+    margin: auto;
+    position: relative;
 }
 .single-letter-vids {
     position: absolute;
@@ -218,6 +410,10 @@ input[type=range]::-webkit-slider-thumb {
     position: absolute;
     top: 0;
     left: 0;
+}
+.single-vids {
+    height: 100%;
+    width: 100%;
 }
 
 #back {

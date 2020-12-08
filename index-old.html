@@ -1,0 +1,217 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tactical Type</title>
+  <meta name="description" content="a typeface designed for 4.053">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/8a31913980.js" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/script.js"></script>
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+<body onload="init()">
+  <div id="left-wrapper">
+    
+    <h1>TACTICAL<br>TYPE</h1>
+    <div style="padding: 20px; padding-top:right;">
+      <p>
+        A typeface made from 20 seconds of tactical cam footage from Germany vs Mexico, 2018. (Downloadable font coming soon!)
+      </p>  
+    </div>
+    
+    <video id="camVid" class="vids" muted="muted">
+      <source src="img/anims/grid-w-cam.mp4" type="video/mp4">
+    </video>
+    <div style="display:block;height:20px;"></div>
+
+    <div style="display:block; width: auto; margin:auto; margin-top:-10px; margin-left:20px;">
+      <i id="btn" onclick="vidButton()" class="fas fa-play"></i> 
+      <input type="range" orient="vertical" min="180" max="800" value="180" step='10' class="slider" id="slider"/>
+    </div>
+    <p style="margin-left:53%;margin-top:-7px;">size</p>
+
+    <div style="display:block;height:25px;"></div>
+
+    <a href="single.html" style="margin-left:20px;">One at a time </a>
+    
+  </div>
+
+  
+  <div id="right-wrapper">
+    <div id="letter-container">     
+      <div class="vid-stack">
+        <video class="vids letter-vids" id="vidA" muted="muted">
+          <source src="img/anims/A.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/B.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/C.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/D.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/E.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/F.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/G.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/H.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/I.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/J.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/K.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/L.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/M.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/N.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/O.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/P.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/Q.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/R.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/S.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/T.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/U.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/V.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/W.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/X.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/Y.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/Z.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/grid.mp4" type="video/mp4">
+        </video>
+      </div><div class="vid-stack">        
+        <video class="vids letter-vids" muted="muted">
+          <source src="img/anims/grid-w-cam.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    
+      <p class="tt03">
+        UNORGANIZED
+      </p>
+      <p class="tt07">
+        DEFENSIVE
+      </p>
+      <p class="tt12">
+        BALANCED
+      </p>
+      <p class="tt19">
+        ATTACKING
+      </p>
+
+      
+      <h2>Use Tactical Type here:</h2>
+      
+      <textarea name="tryitout" id="tryitout" cols="30" rows="5" style="font-family: TT07, monospace; font-weight: normal; font-size: 50px;"></textarea>
+    
+
+
+
+  </div>
+  <div style="display:block;height:200px;"></div>
+
+</body>
+
+
+</html>
