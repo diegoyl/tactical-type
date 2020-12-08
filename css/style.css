@@ -209,7 +209,7 @@ h1 {
 #download:hover {
     cursor: pointer;
     background-color: rgb(27, 27, 27);
-    font-family: "TT07";
+    font-family: "TT19";
 }
 #download:active {
     transform: translateY(10px);
