@@ -6,7 +6,7 @@
 }
 
 
-body,p,h1,h2,h3,h4,h5,h6 {font-family: monospace, sans-serif;} /* change to sans-serif when readt */
+body,p,h1,h2,h3,h4,h5,h6 {font-family: "Roboto Mono", monospace, sans-serif;} /* change to sans-serif when readt */
 
 body, html {
     padding: 0;
@@ -183,7 +183,7 @@ h1 {
 } */
 
 .formations {
-    font-family: monospace;
+    font-family: "Roboto Mono ",monospace;
     display: block;
     font-weight: normal;
     font-size: 70px;
